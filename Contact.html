@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contactez-nous - Hadj Slimane</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(255, 221, 158);
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 16px 27px -3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 20px;
+  }
+
+  .img-navbar img {
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 9px 10px 11px -3px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+  }
+
+  .links-navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 40px;
+  }
+
+  .links-navbar a {
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+    color: black;
+    font-size: 16px;
+  }
+
+  .contact{
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    margin-top: 100px;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact h1{
+    margin: 20px;
+    font-family: "Exo 2", sans-serif;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .contact p{
+    font-family: "Exo 2", sans-serif;
+  }
+  .contact .contact-reseaux{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+  }
+  .contact .contact-reseaux a{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-reseaux a img{
+    width: 80px;
+    height: 80px;
+    filter: invert();
+  }
+  .contact .contact-reseaux a img:hover{
+    width: 85px;
+    height: 85px;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto;
+      padding: 10px;
+    }
+
+    .img-navbar img {
+      margin: 0 auto;
+    }
+
+    .links-navbar {
+      gap: 10px;
+      margin:0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 5px;
+    }
+
+    .links-navbar a {
+      font-size: 14px;
+    }
+  }
+</style>
+<body>
+  <div class="navbar">
+    <a href="index.html" class="img-navbar">
+      <img src="img/logo.png" width="40">
+    </a>
+    <div class="links-navbar">
+      <a href="index.html">Arbre Familial</a>
+      <a href="apropos.html">A propos</a>
+      <a href="Contact.html" style="font-weight: bold;">Contactez-nous</a>
+    </div>
+  </div>
+  <div class="contact">
+    <h1>CONTACT</h1>
+    <p>Cette arbre généalogique a été réalisé par : <b>Hadj Slimane Mohammed Aymen</b></p>
+    <div class="contact-reseaux">
+        <a href="https://www.facebook.com/aymendevweb/" target="_blank"><img src="img/facebook.png"></a>
+        <a href="https://www.instagram.com/aymen_hadj.slimane/" target="_blank"><img src="img/insta.png" ></a>
+        <a href="https://github.com/AymenMHS" target="_blank"><img src="img/github.png"></a>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

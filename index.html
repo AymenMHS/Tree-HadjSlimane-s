@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arbre familial - Hadj Slimane</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="navbar" id="navbar">
+      <a href="index.html" class="img-navbar">
+        <img src="img/logo.png" width="40">
+      </a>
+      <div class="links-navbar">
+        <a href="index.html" style="font-weight: bold;">Arbre Familial</a>
+        <a href="apropos.html">À propos</a>
+        <a href="Contact.html">Contactez-nous</a>
+      </div>
+    </div>
+    <div class="accueil" id="accueil">
+        <div class="images">
+            <img src="img/w2.png" width="700">
+        </div>
+        <div class="titres">
+            <h1>Arbre généalogique des descendants</h1>
+            <h3>Hadj Slimane - حاج سليمان</h3>
+        </div>  
+        <div class="btn">
+            <button onclick="affiche()">VOIR</button>
+        </div>
+    </div>
+    <div class="tree" id="arbre">
+        <h1>Hadj Slimane - حاج سليمان</h1>
+        <ul>
+          <li>
+            <a id="khei" onclick="arbre(this)">KHEI</a>
+            <ul>
+              <li>
+                <a class="homme" onclick="arbre(this)">Hadj-Ahmed</a>
+                <ul>
+                  <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                  <ul>
+                    <li>
+                      <a class="homme" onclick="arbre(this)">Ahmed Hadj Slimane</a>
+                      <ul>
+                        <li>
+                          <a class="homme" onclick="arbre(this)">Braham Hadj Slimane</a>
+                        </li>
+                        <li>
+                          <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+              <li>
+                <a class="homme" onclick="arbre(this)">Hadj-Hamden</a>
+                <ul>
+                  <li>
+                    <a class="homme" onclick="arbre(this)">M<sup>ed</sup> Kebir Hadj Slimane</a>
+                    <ul>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Ghouti Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Mehieddin Hadj Slimane</a>
+                        <ul>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Fatma Hadj Slimane</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="homme" onclick="arbre(this)">M<sup>ed</sup> Seghir Hadj Slimane</a>
+                    <ul>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Djennat Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Kenza Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Khira Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Aïni Hadj Slimane</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="homme" onclick="arbre(this)">Hadj-Ghouti</a>
+                <ul>
+                  <li>
+                    <a class="femme" onclick="arbre(this)">Zohra Hadj Slimane</a>
+                  </li>
+                  <li>
+                    <a class="homme" onclick="arbre(this)">Hadj-Kada Hadj Slimane</a>
+                    <ul>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Zohra Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Benali Hadj Slimane</a>
+                        <ul>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Yamina Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Mansouria Hadj Slimane</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Soltana Hadj Slimane</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="homme" onclick="arbre(this)">Hadji Hadj Slimane</a>
+                    <ul>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Khira Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Larbi Hadj Slimane</a>
+                        <ul>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Yamina Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">Abdesslam Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">Mohammed Hadj Slimane</a>
+                            <ul>
+                              <li>
+                                <a class="homme" onclick="arbre(this)">Mustapha Hadj Slimane</a>
+                                <ul>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Nadjia Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Mahmoud Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Bouchra Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Iman Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Radjaa Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Houda Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Meriem Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Nessma Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Ghizlene Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Mokhtar Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Fella Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Hichem Hadj Slimane</a>
+                                        <ul>
+                                          <li>
+                                            <a class="homme" onclick="arbre(this)">Mokhtar Hadj Slimane</a>
+                                            <a class="femme" onclick="arbre(this)">Naima Hadj Slimane</a>
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Nadera Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Chahida Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Rafika Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Abdelhafid Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Latefa Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Wissem Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Aya Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Douaa Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Nasr-Eddine Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Mustapha Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)" onclick="arbre(this)">M<sup>ed</sup> Aymen Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Arselan Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a class="homme" onclick="arbre(this)">Abdesslam Hadj Slimane</a>
+                                <ul>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Latefa Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Nacera Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Samira Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Smain Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Sultan Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Sihem Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Sofiane Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Rachida Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Wassila Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Chakib Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Salim Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Mehdi Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                                <ul>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Amine Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Rassim Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Razene Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Lotfi Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Yacine Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Sabri Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Naila Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Chafika Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Fethi Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">H'mida Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Fewzia Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Abderafik Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Othman Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Kamel Hadj Slimane</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a class="femme" onclick="arbre(this)">Saliha Hadj Slimane</a>
+                              </li>
+                              <li>
+                                <a class="femme" onclick="arbre(this)">Zoubida Hadj Slimane</a>
+                              </li>
+                              <li>
+                                <a class="homme" onclick="arbre(this)">Abdelkrim Hadj Slimane</a>
+                                <ul>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">M<sup>ed</sup> Fouzi Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">AbdelWaheb Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Sofiane Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Nassim Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Zakia Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Tsouria Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">El-Hadi Hadj Slimane</a>
+                                    <ul>
+                                      <li>
+                                        <a class="femme" onclick="arbre(this)">Narimen Hadj Slimane</a>
+                                      </li>
+                                      <li>
+                                        <a class="homme" onclick="arbre(this)">Fouad Hadj Slimane</a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Samir Hadj Slimane</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a class="homme" onclick="arbre(this)">Abdelmadjid Hadj Slimane</a>
+                                <ul>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Selma Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="femme" onclick="arbre(this)">Nabila Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Tewfik Hadj Slimane</a>
+                                  </li>
+                                  <li>
+                                    <a class="homme" onclick="arbre(this)">Nassim Hadj Slimane</a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Fatima Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Zoulikha Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Mansouria Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Khira Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">Abdelkader Hadj Slimane</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                        <ul>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Fatma Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Yamina Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Fetima Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">Ahmed Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">M<sup>ed</sup> Seghir Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Khedidja Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Zohra Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Yamna Hadj Slimane</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Ghouti Hadj Slimane</a>
+                        <ul>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Mama Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Mansouria Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Zohra Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="homme" onclick="arbre(this)">Djelloul Hadj Slimane</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Cherifa Hadj Slimane</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="homme" onclick="arbre(this)">Mohamed Hadj Slimane</a>
+                    <ul>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Bedra Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="femme" onclick="arbre(this)">Mama Hadj Slimane</a>
+                      </li>
+                      <li>
+                        <a class="homme" onclick="arbre(this)">Abdelkader Hadj Slimane</a>
+                        <ul>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Zohra Hadj Slimane</a>
+                          </li>
+                          <li>
+                            <a class="femme" onclick="arbre(this)">Khira Hadj Slimane</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <div class="arbre-details" id="arbre-details">
+      <div class="close" onclick="closedetails()">
+        <img src="img/plus.png" width="20">
+      </div>
+      <div class="Kheiclass"><p>KHEI</p></div>
+      <div id="centerarbre"><div class="tree" id="treeSecondaire"></div></div>
+    </div>
+    <div class="filter" id="filter"></div>
+    <div class="remarque">
+      <img class="warning" src="img/attention.png" width="40">
+      <img class="x" onclick="masqueX(this)" src="img/plus.png">
+      <div><p><b>Remarque importante :</b><br><br>Cet arbre généalogique n'est pas à jour. Si vous faites partie de la famille, merci de me contacter pour le mettre à jour. Je vous en remercie !</p></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
