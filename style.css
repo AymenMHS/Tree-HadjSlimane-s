@@ -507,8 +507,8 @@
       height: auto;
     }
     .navbar{
-      display: none;
-      z-index: 10000;
+      display: flex;
+      z-index: 998;
       justify-content: space-between;
     }
     .img-navbar{
