@@ -228,7 +228,7 @@
   }
 
   .links-navbar{
-      margin-right: 40px;
+      margin-right: 45px;
       display: flex;
       align-items: center;
       height: 55px;
@@ -238,7 +238,7 @@
     text-decoration: none;
     font-family: "Exo 2", sans-serif;
     color: black;
-    margin: 20px;
+    margin: 10px;
     height: 20px;
   }
 
